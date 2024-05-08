@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">guess_number</string>
+    <string name="higher_number">Piensa un número que sea MAYOR, Inténtalo de nuevo</string>
+    <string name="lower_number">Piensa un número que sea MENOR, Inténtalo de nuevo</string>
+    <string name="correct_number">Has acertado el número! ENORABUENA!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- RESULTADO PARTIDA-->
+    <string name="player_lose">HAS PERDIDO!</string>
+    <string name="player_wins">HAS GANADO!</string>
+</resources>
