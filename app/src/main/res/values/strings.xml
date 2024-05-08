@@ -4,6 +4,10 @@
     <string name="lower_number">Piensa un número que sea MENOR, Inténtalo de nuevo</string>
     <string name="correct_number">Has acertado el número! ENORABUENA!</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- TUTORIAL-->
+    <string name="tutorial_title"> Tutorial de adivina el número</string>
+    <string name="tutorial_pagraph">Este es un juego de adivinación numérica, en el cual se genera un número aleatorio entre 0 y 100. Como participante, se te otorgarán 5 oportunidades para identificar correctamente este número. A lo largo del juego, recibirás indicaciones que te ayudarán a acercarte al número objetivo, señalándote si el número que has propuesto es mayor o menor al número generado aleatoriamente. Tu habilidad para interpretar estas pistas y ajustar tus conjeturas será clave para tu éxito en este desafío. ¡Buena suerte!</string>
+    <string name="btn_close">Salir</string>
     <!-- RESULTADO PARTIDA-->
     <string name="player_lose">HAS PERDIDO!</string>
     <string name="player_wins">HAS GANADO!</string>

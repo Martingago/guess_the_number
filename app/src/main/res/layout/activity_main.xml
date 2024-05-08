@@ -5,13 +5,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
     tools:context=".MainActivity">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/game_fragment"
-        android:name="com.example.guess_number.fragments.GameFragment"
+        android:id="@+id/fragment_container"
+        android:name="com.example.guess_number.fragments.MainMenuFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout="@layout/fragment_main_game">
+        tools:layout="@layout/fragment_main_menu_application">
     </androidx.fragment.app.FragmentContainerView>
+
 </LinearLayout>
