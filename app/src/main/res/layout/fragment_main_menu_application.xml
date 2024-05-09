@@ -10,18 +10,18 @@
         android:id="@+id/btnJugar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Jugar" />
+        android:text="@string/btn_play" />
 
     <Button
         android:id="@+id/btnTutorial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Tutorial" />
+        android:text="@string/btn_tutorial" />
 
     <Button
         android:id="@+id/btnSalir"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Salir" />
+        android:text="@string/btn_exit" />
 
 </LinearLayout>

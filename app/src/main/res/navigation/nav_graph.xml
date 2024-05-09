@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/mainMenuFragment">
+
+    <fragment
+        android:id="@+id/mainMenuFragment"
+        android:name="com.example.guess_number.fragments.MainMenuFragment"
+        android:label="MainMenuFragment" >
+        <action
+            android:id="@+id/action_mainMenuFragment_to_gameFragment"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_mainMenuFragment_to_dialogTutorialFragment2"
+            app:destination="@id/dialogTutorialFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.guess_number.fragments.GameFragment"
+        android:label="GameFragment" >
+        <action
+            android:id="@+id/action_gameFragment_to_lostDialogFragment"
+            app:destination="@id/lostDialogFragment" />
+    </fragment>
+    <dialog
+        android:id="@+id/lostDialogFragment"
+        android:name="com.example.guess_number.fragments.LostDialogFragment"
+        android:label="LostDialogFragment" />
+    <fragment
+        android:id="@+id/dialogTutorialFragment"
+        android:name="com.example.guess_number.fragments.DialogTutorialFragment"
+        android:label="DialogTutorialFragment" >
+        <action
+            android:id="@+id/action_dialogTutorialFragment_to_mainMenuFragment2"
+            app:destination="@id/mainMenuFragment" />
+    </fragment>
+</navigation>

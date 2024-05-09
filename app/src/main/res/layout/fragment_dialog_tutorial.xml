@@ -31,10 +31,10 @@
 
     <!-- Botón para cerrar el fragmento -->
     <Button
-        android:id="@+id/btnClose"
+        android:id="@+id/btnCloseTutorial"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/btn_close" />
+        android:text="@string/btn_exit" />
 
 </LinearLayout>
