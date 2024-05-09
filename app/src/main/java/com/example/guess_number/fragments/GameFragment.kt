@@ -10,6 +10,7 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 import com.example.guess_number.R
 import androidx.core.content.ContextCompat
+import androidx.navigation.findNavController
 
 class GameFragment : Fragment(R.layout.fragment_main_game) {
 
@@ -27,12 +28,18 @@ class GameFragment : Fragment(R.layout.fragment_main_game) {
         val min = 1
         val max = 100
         result = getRandomNumber(min, max)
-
+        //Botón de adivinar el número
         val btnAdivinar = view.findViewById<Button>(R.id.btnUser)
 
         btnAdivinar.setOnClickListener {
             comprobarNumero(view)
         }
+
+        //Boton para salir al menu
+        val btnSalir = view.findViewById<Button>(R.id.btnSalir)
+    btnSalir.setOnClickListener {
+    view.findNavController().navigate(R.id.action_gameFragment_to_mainMenuFragment)
+    }
 
         return view
     }
@@ -43,7 +50,7 @@ class GameFragment : Fragment(R.layout.fragment_main_game) {
         }
     }
 
-    fun comprobarNumero(view: View) {
+    private fun comprobarNumero(view: View) {
         val variable = view.findViewById<EditText>(R.id.editId)
         val userGuessing = variable.text.toString().toInt()
         val resultPlayer = view.findViewById<TextView>(R.id.resultPlayer)
@@ -74,7 +81,7 @@ class GameFragment : Fragment(R.layout.fragment_main_game) {
             mostrarDialogoPerdida(result, false) //El jugador ha perdido
         }
     }
-    
+
     //Funcion que muestra el dialogo de partida perdida.
     // Se le pasa como parametro el número ganador y una funcion lambda que se encarga de reiniciar la partida
     fun mostrarDialogoPerdida(numeroGanador: Int, victoria: Boolean) {

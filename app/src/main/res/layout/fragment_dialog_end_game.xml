@@ -50,14 +50,14 @@
         android:gravity="center">
 
         <Button
-            android:id="@+id/btnYes"
+            android:id="@+id/btnRestartGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sí"
             android:layout_marginEnd="8dp"/>
 
         <Button
-            android:id="@+id/btnNo"
+            android:id="@+id/btnQuitGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="No"

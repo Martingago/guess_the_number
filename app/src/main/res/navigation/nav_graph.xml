@@ -23,6 +23,9 @@
         <action
             android:id="@+id/action_gameFragment_to_lostDialogFragment"
             app:destination="@id/lostDialogFragment" />
+        <action
+            android:id="@+id/action_gameFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
     </fragment>
     <dialog
         android:id="@+id/lostDialogFragment"
