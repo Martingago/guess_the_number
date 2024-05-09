@@ -12,7 +12,7 @@ import com.example.guess_number.R
 import androidx.core.content.ContextCompat
 import androidx.navigation.findNavController
 
-class GameFragment : Fragment(R.layout.fragment_main_game) {
+class GameFragment : Fragment() {
 
     var result: Int = 0 //Numero aleatorio que el usuario debe adivinar
     var vidasRestantes: Int = 5 //número de vidas por defecto del jugador
@@ -72,23 +72,22 @@ class GameFragment : Fragment(R.layout.fragment_main_game) {
                 resultPlayer.text = getString(R.string.correct_number)
                 resultPlayer.setTextColor(ContextCompat.getColor(requireContext(), R.color.correct))
                 btnUser.isEnabled = false
-                mostrarDialogoPerdida(result, true) //El jugador ha ganado la partida
+                //Muestra dialogo al ganar
+                mostrarDialogoPartida(view, result, true)
             }
         }
         vidasRestantesUI.text = vidasRestantes.toString()
         if(vidasRestantes == 0 && userGuessing != result){
             btnUser.isEnabled = false
-            mostrarDialogoPerdida(result, false) //El jugador ha perdido
+            //Muestra dialogo al perder
+            mostrarDialogoPartida(view, result, false)
         }
     }
 
-    //Funcion que muestra el dialogo de partida perdida.
-    // Se le pasa como parametro el número ganador y una funcion lambda que se encarga de reiniciar la partida
-    fun mostrarDialogoPerdida(numeroGanador: Int, victoria: Boolean) {
-        val dialogFragment = LostDialogFragment(numeroGanador, victoria) {
-            reiniciarJuego()
-        }
-        dialogFragment.show(parentFragmentManager, "LostDialogFragment")
+    fun mostrarDialogoPartida(view: View, numeroGanador: Int, victoria: Boolean){
+        val action = GameFragmentDirections.actionGameFragmentToLostDialogFragment(numeroGanador, victoria)
+        view.findNavController().navigate(action)
+
     }
 
     // Funcion que reinicia el juego

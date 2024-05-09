@@ -30,7 +30,20 @@
     <dialog
         android:id="@+id/lostDialogFragment"
         android:name="com.example.guess_number.fragments.LostDialogFragment"
-        android:label="LostDialogFragment" />
+        android:label="LostDialogFragment" >
+        <argument
+            android:name="numeroGanador"
+            app:argType="integer" />
+        <argument
+            android:name="victoria"
+            app:argType="boolean" />
+        <action
+            android:id="@+id/action_lostDialogFragment_to_gameFragment2"
+            app:destination="@id/gameFragment" />
+        <action
+            android:id="@+id/action_lostDialogFragment_to_mainMenuFragment"
+            app:destination="@id/mainMenuFragment" />
+    </dialog>
     <fragment
         android:id="@+id/dialogTutorialFragment"
         android:name="com.example.guess_number.fragments.DialogTutorialFragment"
