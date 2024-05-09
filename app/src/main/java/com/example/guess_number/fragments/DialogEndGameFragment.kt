@@ -29,7 +29,7 @@ class LostDialogFragment : DialogFragment() {
         }
 
         val textMessage = view.findViewById<TextView>(R.id.textMessage)
-        textMessage.text = "El número ganador era:"
+        textMessage.text = getString(R.string.subtitle_result)
 
         val resultGame = view.findViewById<TextView>(R.id.ResultGame)
         resultGame.text = args.numeroGanador.toString()

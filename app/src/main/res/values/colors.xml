@@ -4,4 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="error">#FF0000</color>
     <color name="correct">#00FF00</color>
+    <color name="green">#00FAAE</color>
+    <color name="dark_blue">#20233A</color>
 </resources>

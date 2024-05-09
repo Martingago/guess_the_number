@@ -11,8 +11,9 @@
         android:id="@+id/playerStatus"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¡Has perdido!"
+        android:text="@string/player_lose"
         android:textStyle="bold"
+        android:textColor="@color/green"
         android:textSize="20sp"
         android:gravity="center_horizontal"/>
 
@@ -20,7 +21,7 @@
         android:id="@+id/textMessage"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="El número ganador era:"
+        android:text="@string/subtitle_result"
         android:gravity="center_horizontal"
         android:layout_marginTop="16dp"/>
 
@@ -28,7 +29,7 @@
         android:id="@+id/ResultGame"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="56"
+        android:text=""
         android:layout_marginTop="10dp"
         android:textSize="40dp"
         android:textStyle="bold"
@@ -38,7 +39,7 @@
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="¿Quieres jugar de nuevo?"
+        android:text="@string/play_again_text"
         android:layout_marginTop="40dp"
         android:gravity="center"/>
 
@@ -53,14 +54,18 @@
             android:id="@+id/btnRestartGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Sí"
+            android:text="@string/yes"
+            android:background="@color/green"
+            android:textColor="@color/dark_blue"
             android:layout_marginEnd="8dp"/>
 
         <Button
             android:id="@+id/btnQuitGame"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="No"
+            android:background="@color/green"
+            android:textColor="@color/dark_blue"
+            android:text="@string/no"
             android:layout_marginStart="8dp"/>
     </LinearLayout>
 

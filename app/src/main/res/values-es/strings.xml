@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Adivina el número</string>
+    <!-- INICIO -->
+    <string name="btn_play">Jugar</string>
+    <string name="btn_tutorial">Tutorial</string>
+    <string name="btn_exit">Salir</string>
+
+    <!-- TUTORIAL-->
+    <string name="tutorial_title"> Tutorial de adivina el número</string>
+    <string name="tutorial_pagraph">Este es un juego de adivinación numérica, en el cual se genera un número aleatorio entre 0 y 100. Como participante, se te otorgarán 5 oportunidades para identificar correctamente este número. A lo largo del juego, recibirás indicaciones que te ayudarán a acercarte al número objetivo, señalándote si el número que has propuesto es mayor o menor al número generado aleatoriamente. Tu habilidad para interpretar estas pistas y ajustar tus conjeturas será clave para tu éxito en este desafío. ¡Buena suerte!</string>
+
+    <!-- GAMEPLAY -->
+    <string name="game_title">ADIVINA EL NÚMERO</string>
+    <string name="game_action">Estoy pensando en un número entre el 0 y el 100. ¿Puedes adivinar cúal es?</string>
+    <string name="lifes_text">Vidas restantes: </string>
+    <string name="number_placeholder">Introduce número</string>
+    <string name="btn_guess">Adivinar!</string>
+    <string name="higher_number">Piensa un número que sea MAYOR, Inténtalo de nuevo</string>
+    <string name="lower_number">Piensa un número que sea MENOR, Inténtalo de nuevo</string>
+    <string name="correct_number">Has acertado el número! ENORABUENA!</string>
+
+
+    <!-- RESULTADO PARTIDA-->
+    <string name="subtitle_result">El resultado era: </string>
+    <string name="player_lose">HAS PERDIDO!</string>
+    <string name="player_wins">HAS GANADO!</string>
+    <string name="play_again_text">¿Quieres jugar de nuevo?</string>
+    <string name="yes">Sí</string>
+    <string name="no">No</string>
+</resources>

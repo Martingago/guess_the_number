@@ -1,17 +1,29 @@
 <resources>
-    <string name="app_name">guess_number</string>
-    <string name="higher_number">Piensa un número que sea MAYOR, Inténtalo de nuevo</string>
-    <string name="lower_number">Piensa un número que sea MENOR, Inténtalo de nuevo</string>
-    <string name="correct_number">Has acertado el número! ENORABUENA!</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <!-- INICIO -->
-    <string name="btn_play">Jugar</string>
+    <string name="app_name">Guess the Number</string>
+    <!-- START -->
+    <string name="btn_play">Play</string>
     <string name="btn_tutorial">Tutorial</string>
-    <string name="btn_exit">Salir</string>
-    <!-- TUTORIAL-->
-    <string name="tutorial_title"> Tutorial de adivina el número</string>
-    <string name="tutorial_pagraph">Este es un juego de adivinación numérica, en el cual se genera un número aleatorio entre 0 y 100. Como participante, se te otorgarán 5 oportunidades para identificar correctamente este número. A lo largo del juego, recibirás indicaciones que te ayudarán a acercarte al número objetivo, señalándote si el número que has propuesto es mayor o menor al número generado aleatoriamente. Tu habilidad para interpretar estas pistas y ajustar tus conjeturas será clave para tu éxito en este desafío. ¡Buena suerte!</string>
-    <!-- RESULTADO PARTIDA-->
-    <string name="player_lose">HAS PERDIDO!</string>
-    <string name="player_wins">HAS GANADO!</string>
+    <string name="btn_exit">Exit</string>
+
+    <!-- TUTORIAL -->
+    <string name="tutorial_title">Guess the Number Tutorial</string>
+    <string name="tutorial_pagraph">This is a number guessing game, in which a random number between 0 and 100 is generated. As a participant, you will be given 5 chances to correctly identify this number. Throughout the game, you will receive hints that will help you get closer to the target number, indicating whether the number you have guessed is greater or less than the randomly generated number. Your ability to interpret these clues and adjust your guesses will be key to your success in this challenge. Good luck!</string>
+
+    <!-- GAMEPLAY -->
+    <string name="game_title">GUESS THE NUMBER</string>
+    <string name="game_action">Im thinking of a number between 0 and 100. Can you guess what it is?</string>
+    <string name="lifes_text">Remaining lives: </string>
+    <string name="number_placeholder">Enter number</string>
+    <string name="btn_guess">Guess!</string>
+    <string name="higher_number">Think of a number that is HIGHER. Try again!</string>
+    <string name="lower_number">Think of a number that is LOWER. Try again!</string>
+    <string name="correct_number">Youve guessed the number! CONGRATULATIONS!</string>
+
+    <!-- GAME RESULT -->
+    <string name="subtitle_result">The result was: </string>
+    <string name="player_lose">YOU LOSE!</string>
+    <string name="player_wins">YOU WIN!</string>
+    <string name="play_again_text">Do you want to play again?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
 </resources>

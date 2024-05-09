@@ -13,7 +13,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tutorial_title"
-        android:textSize="24sp"
+        android:textSize="26sp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/green"
         android:textStyle="bold"
         android:layout_gravity="center_horizontal"
         android:layout_marginBottom="16dp"/>
@@ -22,7 +24,8 @@
     <TextView
         android:id="@+id/textExplanation"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="1"
         android:text="@string/tutorial_pagraph"
         android:textSize="18sp"
         android:lineSpacingMultiplier="1.2"
@@ -35,6 +38,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
+        android:background="@color/green"
+        android:textColor="@color/dark_blue"
+        android:layout_marginBottom="70dp"
         android:text="@string/btn_exit" />
 
 </LinearLayout>
