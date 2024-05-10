@@ -9,7 +9,7 @@ import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.guess_number.R
 
-class LostDialogFragment : DialogFragment() {
+class EndGameDialogFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         // Construir el diálogo
@@ -18,7 +18,7 @@ class LostDialogFragment : DialogFragment() {
         val view = inflater.inflate(R.layout.fragment_dialog_end_game, null)
 
         // Se recogen los datos provenientes del fragmento
-        val args = LostDialogFragmentArgs.fromBundle(requireArguments())
+        val args = EndGameDialogFragmentArgs.fromBundle(requireArguments())
         val textTitle = view.findViewById<TextView>(R.id.playerStatus)
 
         // Comprueba si el jugador ha ganado o no para mostrar un mensaje u otro

@@ -9,7 +9,7 @@ import android.widget.Button
 import androidx.navigation.findNavController
 import com.example.guess_number.R
 
-class DialogTutorialFragment : Fragment() {
+class TutorialFragment : Fragment() {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
