@@ -5,12 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@color/dark_blue"
     android:gravity="center">
 
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@color/dark_blue"
         app:srcCompat="@drawable/logotipo_adivina_el_numero_esp" />
     <Button
         android:id="@+id/btnJugar"
